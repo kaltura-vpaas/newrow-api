@@ -2,17 +2,24 @@
 # ----------
 # GET /analytics/sessions
 # https://smart.newrow.com/backend/api/analytics/sessions
-# *** populate room_id with valid value (this is a newrow room Id, so need to run rooms.sh first)
+# *** No params needed since passing resourceId and filtering by it.
+
 apiJson=$(cat <<EOF
 {
 	"method": "GET",
 	"action": "analytics/sessions",
-	"params": {
-        "room_id": 198995
-	}
+	"params": { }
 }
 EOF
 )
 
+if [ $# -eq 0 ]
+  then
+    echo "ERROR: no resourceId arg passed to sessions.sh"
+    exit
+  else
+    resourceId=$1
+fi
+
 # Call Newrow API
-./newrowkaf.sh "$apiJson"
+./newrowkaf.sh "$apiJson" $resourceId
