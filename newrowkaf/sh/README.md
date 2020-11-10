@@ -1,4 +1,4 @@
-# newrow-api/newrow-kaf/sh
+# newrow-api/newrowkaf/sh
 Shell scripts to run Newrow APIs via the newrowkaf module.
 
 ## Setup

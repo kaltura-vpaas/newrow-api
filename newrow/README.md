@@ -1,4 +1,4 @@
-# newrow-api/newrow-direct
+# newrow-api/newrow
 Python scripts to run Newrow APIs directly.
 
 ## Setup

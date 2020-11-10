@@ -1,4 +1,4 @@
-# newrow-api/newrow-kaf/python
+# newrow-api/newrowkaf/python
 Python scripts to run Newrow APIs via newrowkaf.
 
 ## Setup
