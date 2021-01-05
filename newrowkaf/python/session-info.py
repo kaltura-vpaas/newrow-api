@@ -36,6 +36,8 @@ if sessionsResponse.status_code == 200:
     sessionsResponseJson = sessionsResponse.json()
     #print(sessionsResponseJson)
 
+    # TODO: need to account for pagination; currently assuming that 'total_count'
+    # accounts for all sessions in one page of results, which is often not the case.
     print("--------------------------------------")
     print("| Last session in resourceId %s |" % resourceId)
     print("--------------------------------------")
