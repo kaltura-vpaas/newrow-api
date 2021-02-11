@@ -56,7 +56,8 @@ if sessionsResponse.status_code == 200:
 	    "method": "GET",
 	    "action": "analytics/session-attendees",
 	    "params": {
-            "session_id": %s
+            "session_id": %s,
+            "include_third_party_data": 1
 	    }
     }""" % sessionId
 

@@ -8,7 +8,8 @@ apiJson=$(cat <<EOF
 	"method": "GET",
 	"action": "analytics/session-attendees",
 	"params": {
-        "session_id": 7687842
+        "session_id": 7687842,
+        "include_third_party_data": 1
 	}
 }
 EOF
