@@ -5,6 +5,8 @@ import requests
 from datetime import datetime
 
 page = 0
+
+# IMPORTANT: populate the following two values accordingly
 third_party_room_id = XXXXXX
 headers = {'content-type': 'application/json', 'Accept-Charset': 'UTF-8', 'Authorization': 'Bearer INSERT_TOKEN' }
 
